@@ -24,7 +24,7 @@
     justify-content: space-between;
     align-items: center;
     margin-left: 300px;
-    padding-top: 60px;
+    padding-top: 30px;
     font-size: 1.2rem;
     margin-right: 150px;
 
@@ -48,16 +48,16 @@
 
     .logo {
       text-transform: uppercase;
-     a{
+      a {
         text-decoration: none;
-      color: white;
-     }
+        color: white;
+      }
     }
   }
 
   .bio {
     height: 100%;
-    margin: 100px 0 0 300px;
+    margin: 50px 0 0 300px;
 
     .welcome {
       margin: 20px 0;
@@ -116,23 +116,23 @@
         margin-bottom: 10px;
       }
 
-     .card-btn {
-      a {
-        text-decoration: none;
-        font-size: 1rem;
-        color: black;
-      }
-      padding: 10px 20px;
-      margin-top: 10px;
-      border: none;
-      border-radius: 5px;
-      transition: ease-in 0.25s all;
-      filter: drop-shadow(0px 13px 20px rgba(127, 128, 127, 0.411));
+      .card-btn {
+        a {
+          text-decoration: none;
+          font-size: 1rem;
+          color: black;
+        }
+        padding: 10px 20px;
+        margin-top: 10px;
+        border: none;
+        border-radius: 5px;
+        transition: ease-in 0.25s all;
+        filter: drop-shadow(0px 13px 20px rgba(127, 128, 127, 0.411));
 
-      &:hover {
-        transform: translateY(5px);
+        &:hover {
+          transform: translateY(5px);
+        }
       }
-    }
     }
   }
 }
