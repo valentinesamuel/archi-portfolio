@@ -1,5 +1,7 @@
+@use '../../styles.scss';
+
 .header {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background-image: linear-gradient(
       180deg,
@@ -11,6 +13,10 @@
   background-repeat: no-repeat;
   background-position: center;
   color: white;
+.image{
+ text-align: center;
+ animation: styles.$bounce
+}
 
   nav {
     display: flex;
@@ -36,9 +42,9 @@
   }
 
   .bio {
-        height: 100%;
-    margin-top: 156px;
-    margin-left: 300px;
+    height: 100%;
+    margin: 100px 0 0 300px;
+
     .welcome {
       margin: 20px 0;
     }
@@ -107,12 +113,16 @@
 }
 
 .about-us {
-      padding-left: 300px;
-  background-color: purple;
+  padding-left: 300px;
+  background-color: #e9e4de;
   display: flex;
+  margin-top: 300px;
 
-  .heading{
+  .heading {
     padding: 50px 0px;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 1rem;
   }
 
   .primary-about {
@@ -124,5 +134,50 @@
 
   .secondary-about {
     max-width: 500px;
+  }
+  img {
+    position: relative;
+    top: -100px;
+    right: -40px;
+  }
+}
+
+.works {
+
+  margin-left: 300px;
+  .work-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 300px));
+  grid-auto-flow: row;
+
+  place-items: center;
+  align-content: center;
+
+  grid-gap: 1rem;
+    .work-card {
+      background-color: rgb(216, 208, 208) (208, 200, 200);
+      width: 300px;
+      .image {
+        height: 100%;
+        width: 100%;
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}
+
+.footer{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  background-color: #e9e4de;
+  padding: 10px 5px;
+
+  a{
+    text-decoration: none;
   }
 }
