@@ -1,0 +1,128 @@
+.header {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(
+      180deg,
+      rgba(26, 29, 31, 0) 0%,
+      #060707 100%
+    ),
+    url("../../assets/images/arvid-hoidahl--JvHAHp7zU0-unsplash.jpg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 300px;
+    padding-top: 60px;
+    font-size: 1.2rem;
+    margin-right: 270px;
+
+    .nav-links {
+      display: flex;
+
+      li {
+        margin-right: 20px;
+        list-style: none;
+        color: white;
+      }
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .bio {
+        height: 100%;
+    margin-top: 156px;
+    margin-left: 300px;
+    .welcome {
+      margin: 20px 0;
+    }
+    h1 {
+      line-height: 6.5rem;
+      margin-bottom: 28px;
+      font-size: 5rem;
+      text-transform: uppercase;
+      width: 20px;
+    }
+    .about {
+      max-width: 450px;
+      margin-bottom: 30px;
+      line-height: 1.8rem;
+    }
+    .btn {
+      padding: 10px 20px;
+      margin-bottom: 40px;
+      border: none;
+      border-radius: 5px;
+      transition: ease-in 0.25s all;
+      filter: drop-shadow(0px 13px 20px rgba(127, 128, 127, 0.411));
+
+      &:hover {
+        transform: translateY(5px);
+      }
+    }
+  }
+}
+
+.what-we-do {
+  h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 40px;
+  }
+
+  .card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .card {
+      max-width: 300px;
+      text-align: center;
+      padding: 30px;
+      margin: 20px;
+
+      img {
+        margin-bottom: 10px;
+      }
+
+      .card-btn {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        filter: drop-shadow(0px 13px 20px rgba(127, 128, 127, 0.411));
+        margin-top: 10px;
+        transition: ease-in 0.25s all;
+        &:hover {
+          transform: translateY(5px);
+        }
+      }
+    }
+  }
+}
+
+.about-us {
+      padding-left: 300px;
+  background-color: purple;
+  display: flex;
+
+  .heading{
+    padding: 50px 0px;
+  }
+
+  .primary-about {
+    max-width: 500px;
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+  }
+
+  .secondary-about {
+    max-width: 500px;
+  }
+}
