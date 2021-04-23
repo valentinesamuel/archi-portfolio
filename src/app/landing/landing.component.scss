@@ -44,6 +44,9 @@
       &:hover {
         cursor: pointer;
       }
+      @media (max-width: 480px) {
+        display: none;
+      }
     }
 
     .logo {
@@ -51,7 +54,14 @@
       a {
         text-decoration: none;
         color: white;
+        @media (max-width: 480px) {
+          font-size: 1.2rem;
+        }
       }
+    }
+    @media (max-width: 480px) {
+      padding-top: 60px;
+      margin-left: 30px;
     }
   }
 
@@ -68,11 +78,20 @@
       font-size: 5rem;
       text-transform: uppercase;
       width: 20px;
+
+      @media (max-width: 480px) {
+        font-size: 3rem;
+        line-height: 3rem;
+        width: 0;
+      }
     }
     .about {
       max-width: 450px;
       margin-bottom: 30px;
       line-height: 1.8rem;
+      @media (max-width: 480px) {
+        padding-right: 20px;
+      }
     }
     .btn {
       a {
@@ -91,6 +110,14 @@
         transform: translateY(5px);
       }
     }
+    @media (max-width: 480px) {
+      //
+      margin-left: 30px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    //
   }
 }
 
@@ -133,6 +160,10 @@
           transform: translateY(5px);
         }
       }
+    }
+
+    @media (max-width: 480px) {
+      flex-direction: column;
     }
   }
 }
@@ -178,6 +209,20 @@
     height: 600px;
     object-fit: contain;
   }
+
+  @media (max-width: 480px) {
+    padding-left: 0;
+    flex-direction: column;
+    padding: 30px;
+    img {
+      position: relative;
+      max-width: 600px;
+      top: 0px;
+      right: 0px;
+      height: 600px;
+      object-fit: contain;
+    }
+  }
 }
 
 .works {
@@ -212,7 +257,21 @@
         }
       }
     }
+
+  
   }
+    @media (max-width: 480px) {
+      margin: 30px;
+      .work-container {
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+        justify-content: center;
+      }
+      img {
+        border-radius: 15px;
+      }
+    }
 }
 
 .footer {
@@ -224,5 +283,8 @@
 
   a {
     text-decoration: none;
+  }
+  @media (max-width: 768px) {
+    width: 100%;
   }
 }
