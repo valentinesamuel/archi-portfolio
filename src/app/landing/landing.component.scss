@@ -1,7 +1,7 @@
 @use '../../styles.scss';
 
 .header {
-  height: 100%;
+  height: 100vh;
   width: 100%;
   background-image: linear-gradient(
       180deg,
@@ -257,21 +257,19 @@
         }
       }
     }
-
-  
   }
-    @media (max-width: 480px) {
-      margin: 30px;
-      .work-container {
-        display: flex;
-        flex-direction: column;
-        place-items: center;
-        justify-content: center;
-      }
-      img {
-        border-radius: 15px;
-      }
+  @media (max-width: 480px) {
+    margin: 30px;
+    .work-container {
+      display: flex;
+      flex-direction: column;
+      place-items: center;
+      justify-content: center;
     }
+    img {
+      border-radius: 15px;
+    }
+  }
 }
 
 .footer {
