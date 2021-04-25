@@ -1,14 +1,17 @@
 @use '../../styles.scss';
 
 .header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   height: 100vh;
   width: 100%;
   background-image: linear-gradient(
       180deg,
-      rgba(26, 29, 31, 0) 0%,
-      #060707 100%
+      rgba(55, 56, 56, 0) 0%,
+      #202222 100%
     ),
-    url("../../assets/images/arvid-hoidahl--JvHAHp7zU0-unsplash.jpg");
+    url("../../assets/images/London_40_animation3_2048.gif");
   background-size: auto;
   background-repeat: no-repeat;
   background-position: center;
@@ -20,6 +23,7 @@
   }
 
   nav {
+    color: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,7 +41,7 @@
 
         a {
           text-decoration: none;
-          color: white;
+          color: black;
           font-size: 1.2rem;
         }
       }
@@ -53,7 +57,7 @@
       text-transform: uppercase;
       a {
         text-decoration: none;
-        color: white;
+        color: black;
         @media (max-width: 480px) {
           font-size: 1.2rem;
         }
@@ -66,8 +70,8 @@
   }
 
   .bio {
-    height: 100%;
-    margin: 50px 0 0 300px;
+    // height: 90%;
+    margin: 10px 0 0 300px;
 
     .welcome {
       margin: 20px 0;
@@ -172,6 +176,7 @@
   padding-left: 300px;
   background-color: #e9e4de;
   display: flex;
+  justify-content: space-evenly;
   margin-top: 200px;
 
   .heading {
