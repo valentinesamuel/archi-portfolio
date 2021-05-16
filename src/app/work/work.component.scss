@@ -1,0 +1,110 @@
+.hero {
+  width: 100vw;
+  height: 95vh;
+  background-image: url("../../assets/images/bedroom1.png");
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: 480px) {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.spec {
+  margin: 20px 20px;
+  margin-top: 200px;
+  font-size: 1.8rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-content: center;
+
+  .features {
+    margin-left: 200px;
+    line-height: 3rem;
+    .quick-spec {
+      display: flex;
+      margin-bottom: 30px;
+      .bath {
+        margin-right: 50px;
+      }
+    }
+  }
+
+  .plan {
+    .image-container {
+      height: 100%;
+      margin-right: 200px;
+    }
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  @media (max-width: 480px) {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column-reverse;
+
+    .features {
+      margin-left: 0;
+
+      .quick-spec {
+        text-align: center;
+        justify-content: center;
+
+        .bath {
+          margin: 0 auto;
+        }
+      }
+    }
+
+    .plan {
+      .image-container {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.photos {
+  margin: 200px 0 0 200px;
+  .image-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 280px));
+    place-items: center;
+    grid-gap: 2rem;
+  }
+  .single-image {
+    max-height: 500px;
+    max-width: 1000px;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+  @media (max-width: 480px) {
+    margin: 20px;
+
+    .image-box {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+h2 {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
